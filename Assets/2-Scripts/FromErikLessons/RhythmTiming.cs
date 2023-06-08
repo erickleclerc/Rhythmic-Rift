@@ -12,7 +12,7 @@ public class RhythmTiming : MonoBehaviour
     public GameObject target;
     public AudioSource songSource;
 
-    public TextMeshProUGUI timeText;
+    //public TextMeshProUGUI timeText;
 
     public int BPM = 60;
 
@@ -35,8 +35,6 @@ public class RhythmTiming : MonoBehaviour
 
     private void Update()
     {
-        // Use the Unity time for now, even though it WOULD desync from a song!
-        // float time = Time.time;
 
         // How much audio time has elapsed since we requested the audio source to play?
         double time = elapsedAudioTime;
@@ -58,7 +56,7 @@ public class RhythmTiming : MonoBehaviour
 
         string output = $"Time: <b>{time:00:00.00}</b> Beat: <b>{beat:000}</b>";
 
-        timeText.text = output;
+        //timeText.text = output;
     }
 
     private bool haveSpawnedObject = false;
@@ -73,7 +71,7 @@ public class RhythmTiming : MonoBehaviour
     {
         if (currentBeat == 0 && haveSpawnedObject == false)
         {
-            movingTarget.transform.position = new Vector3(distance, 0, 0);
+            movingTarget.transform.position = new Vector3(0, 2, distance);
             spawnTime = elapsedAudioTime;
 
             haveSpawnedObject = true;
@@ -81,7 +79,7 @@ public class RhythmTiming : MonoBehaviour
 
         if (currentBeat >= 0)
         {
-            movingTarget.transform.position += Vector3.left * (distance / time) * Time.deltaTime;
+            movingTarget.transform.position += Vector3.back * (distance / time) * Time.deltaTime;
 
             if (hasArrived == false && movingTarget.transform.position.x <= 0)
             {

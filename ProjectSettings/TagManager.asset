@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Hand
+  - VRRig
+  - Red Box
+  - Blue Box
+  - Green Box
   layers:
   - Default
   - TransparentFX
