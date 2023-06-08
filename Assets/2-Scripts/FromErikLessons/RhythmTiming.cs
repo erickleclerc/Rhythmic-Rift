@@ -12,6 +12,8 @@ public class RhythmTiming : MonoBehaviour
     public GameObject target;
     public AudioSource songSource;
 
+    private bool isOnBeat = false;
+
     //public TextMeshProUGUI timeText;
 
     public int BPM = 60;
@@ -31,6 +33,7 @@ public class RhythmTiming : MonoBehaviour
         audioStartTime = (float)currentAudioTime + 3;
 
         songSource.PlayScheduled(audioStartTime);
+
     }
 
     private void Update()
@@ -47,10 +50,14 @@ public class RhythmTiming : MonoBehaviour
 
         if (previousBeat != beat)
         {
-            target.GetComponent<Renderer>().material.color = beat % 2 != 0 ? Color.red : Color.blue;
+           //target.GetComponent<Renderer>().material.color = beat % 2 != 0 ? Color.red : Color.blue;
+
+            isOnBeat = beat % 2 != 0 ? true : false;
 
             previousBeat = beat;
         }
+
+        Debug.Log($"Is on beat: {isOnBeat}");
 
         UpdateMovingTarget();
 

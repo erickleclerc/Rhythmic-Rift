@@ -20,6 +20,7 @@ public class BoxBehaviour : MonoBehaviour
     {
         if (collision.gameObject.tag == "Hand")
         {
+            //If rhythm timing bool isOnBeat == true .... Destroy and add points
             Destroy(gameObject);
         }
     }

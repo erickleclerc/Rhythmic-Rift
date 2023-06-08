@@ -40,6 +40,6 @@ public class BoxManager : MonoBehaviour
     void CreateBox(GameObject box, Transform pos)
     {
         GameObject b = Instantiate(box, pos.position, Quaternion.identity);
-        b.GetComponent<Rigidbody>().velocity = speed * (Player.transform.position - pos.position);
+        //b.GetComponent<Rigidbody>().velocity = speed * (Player.transform.position - pos.position);
     }
 }
