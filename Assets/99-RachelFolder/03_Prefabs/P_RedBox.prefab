@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3272559927638846544}
   - component: {fileID: -8189784067885077075}
   - component: {fileID: -5171239742407800656}
+  - component: {fileID: -4651297175445241493}
   m_Layer: 0
   m_Name: P_RedBox
   m_TagString: Red Box
@@ -128,6 +129,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6291ab5d1e26e754286e35ea53b65fbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-4651297175445241493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7186858239219390794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bf6fe7101465bd43938af710d213af9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rhythmTiming1: {fileID: 0}
+  distance: 10
+  time: 2
 --- !u!1001 &2323143849335244044
 PrefabInstance:
   m_ObjectHideFlags: 0
