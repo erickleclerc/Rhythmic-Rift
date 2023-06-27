@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class BoxManager : MonoBehaviour
@@ -14,8 +12,6 @@ public class BoxManager : MonoBehaviour
     public float speed;
     private float timer;
 
-
-    // Update is called once per frame
     void Update()
     {
         timer += Time.deltaTime;

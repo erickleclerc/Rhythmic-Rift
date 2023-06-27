@@ -1,9 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-
-using TMPro;
-
 
 public class RhythmTiming1 : MonoBehaviour
 {
@@ -12,7 +7,7 @@ public class RhythmTiming1 : MonoBehaviour
    // public GameObject target;
     public AudioSource songSource;
 
-    private bool isOnBeat = false;
+    public bool isOnBeat = false;
 
     //public TextMeshProUGUI timeText;
 
