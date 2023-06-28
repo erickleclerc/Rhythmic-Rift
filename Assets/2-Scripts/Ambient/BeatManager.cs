@@ -3,11 +3,17 @@ using UnityEngine.Events;
 
 public class BeatManager : MonoBehaviour
 {
+    // add varying pulse effects on beats and half beats
     [SerializeField] private float bpm;
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private Intervals[] intervals;
+
+    //note depending on graphics card, shader manipulation might not be supported
     [SerializeField] private Renderer indicatorRenderer;
-    [SerializeField] private string shaderPropertyName = "_Amount";
+    [SerializeField] private string shaderPropertyName = "_Amount"; 
+
+    
+
 
     private double audioStartTime;
     private int previousBeat = -1;
@@ -32,9 +38,15 @@ public class BeatManager : MonoBehaviour
 
         if (previousBeat != beat)
         {
+            // testing dissolve effect on shader
             float shaderAmount = beat % 2 != 0 ? amount : 0f;
             indicatorRenderer.material.SetFloat(shaderPropertyName, shaderAmount);
             previousBeat = beat;
+
+            //test to affect skybox, be careful flashing lights may cause seizure
+            //float exposure = beat % 2 != 0 ? .3f : .75f;
+            //RenderSettings.skybox.SetFloat("_Exposure", exposure);
+            
         }
 
         foreach (Intervals interval in intervals)
