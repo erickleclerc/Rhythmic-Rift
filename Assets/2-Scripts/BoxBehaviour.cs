@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem.XR;
+using UnityEngine.InputSystem;
 
 public class BoxBehaviour : MonoBehaviour
 {
     public Score score;
-    private RhythmTiming1 rhythmTiming1;
+    public RhythmTiming1 rhythmTiming1;
     private bool isOnBeat = false;
 
     // Start is called before the first frame update
@@ -27,16 +29,33 @@ public class BoxBehaviour : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Hand")
+        if (collision.gameObject.tag == "RightHand")
         {
-            if (isOnBeat == true)
-            {
-                score.score += 1;
-                Destroy(gameObject);
-            }
+            AddToScoreIfOnBeat();
+            Vibrate(InputSystem.GetDevice<XRController>(CommonUsages.RightHand));
+        }
+        if (collision.gameObject.tag == "LeftHand")
+        {
+            AddToScoreIfOnBeat();
+            Vibrate(InputSystem.GetDevice<XRController>(CommonUsages.LeftHand));
         }
     }
 
+    private void AddToScoreIfOnBeat()
+    {
+        if (isOnBeat == true)
+        {
+            score.score += 1;
+            Destroy(gameObject);
+        }
+    }
+
+    private static void Vibrate(XRController device)
+    {
+        var command = UnityEngine.InputSystem.XR.Haptics.SendHapticImpulseCommand.Create(0, 1, 0.1f);
+        device.ExecuteCommand(ref command);
+        //Debug.Log(device.name);
+    }
 
     IEnumerator DestroyBox()
     {
