@@ -7,7 +7,7 @@ public class Score : MonoBehaviour
 {
     public int score = 0;
 
-    [SerializeField] private TextMeshProUGUI scoreText;
+    [SerializeField] private TMP_Text scoreText;
     
 
 
@@ -21,6 +21,6 @@ public class Score : MonoBehaviour
     void Update()
     {
         scoreText.text = "Score: " + score.ToString();
-        score++;
+        //score++;
     }
 }

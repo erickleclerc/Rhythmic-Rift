@@ -14,7 +14,6 @@ public class BPMChecker : MonoBehaviour
        rhythmTiming1 = GameObject.Find("RhythmLogic").GetComponent<RhythmTiming1>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (rhythmTiming1.currentBeat >= 0)
