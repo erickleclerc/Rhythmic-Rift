@@ -7,20 +7,22 @@ public class Score : MonoBehaviour
 {
     public int score = 0;
 
-    [SerializeField] private TMP_Text scoreText;
-    
-
-
-    // Start is called before the first frame update
+    [SerializeField] private TextMeshProUGUI scoreText, highScoreText;
+   
     void Start()
     {
         scoreText.text = "Score: " + score.ToString();
     }
 
-    // Update is called once per frame
     void Update()
     {
         scoreText.text = "Score: " + score.ToString();
-        //score++;
+        highScoreText.text = "Highscore: " + PlayerPrefs.GetInt("Score").ToString();
+
+        if (score > PlayerPrefs.GetInt("Score"))
+        {
+          PlayerPrefs.SetInt("Score", score);
+            highScoreText.text = "Highscore: " + PlayerPrefs.GetInt("Score").ToString();
+        }
     }
 }

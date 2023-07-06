@@ -13,7 +13,8 @@ public class BoxBehaviour : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        score = GameObject.Find("Score").GetComponent<Score>();
+        //score = GameObject.Find("Score").GetComponent<Score>();
+        score = GameObject.FindGameObjectWithTag("Score").GetComponent<Score>();
 
         //get the rhythmTiming component and see if the bool isOnBeat is true
         rhythmTiming1 = GameObject.Find("RhythmLogic").GetComponent<RhythmTiming1>();
@@ -27,19 +28,33 @@ public class BoxBehaviour : MonoBehaviour
         isOnBeat = rhythmTiming1.isOnBeat;
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.tag == "RightHand")
+        if (other.gameObject.tag == "RightHand")
         {
             AddToScoreIfOnBeat();
             Vibrate(InputSystem.GetDevice<XRController>(CommonUsages.RightHand));
         }
-        if (collision.gameObject.tag == "LeftHand")
+        if (other.gameObject.tag == "LeftHand")
         {
             AddToScoreIfOnBeat();
             Vibrate(InputSystem.GetDevice<XRController>(CommonUsages.LeftHand));
         }
     }
+
+    //private void OnCollisionEnter(Collision collision)
+    //{
+    //    if (collision.gameObject.tag == "RightHand")
+    //    {
+    //        AddToScoreIfOnBeat();
+    //        Vibrate(InputSystem.GetDevice<XRController>(CommonUsages.RightHand));
+    //    }
+    //    if (collision.gameObject.tag == "LeftHand")
+    //    {
+    //        AddToScoreIfOnBeat();
+    //        Vibrate(InputSystem.GetDevice<XRController>(CommonUsages.LeftHand));
+    //    }
+    //}
 
     private void AddToScoreIfOnBeat()
     {
