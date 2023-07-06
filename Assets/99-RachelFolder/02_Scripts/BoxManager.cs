@@ -48,6 +48,7 @@ public class BoxManager : MonoBehaviour
             while
              (randRow2 == randRow1 && randCol2 == randCol1 || randRow2 != randRow1 && randCol2 != randCol1);
             Transform pos2 = spawnPositions[randRow2][randCol2];
+
             if (randWall < 7)
             {
                 if (randColor == 0)
@@ -64,18 +65,48 @@ public class BoxManager : MonoBehaviour
                     CreateBox(bluePrefab, pos2);
                 }
             }
-            if (randWall == 7)
+            
+            else if (randWall == 7)
             {
                 CreateBox(verticalWall, pos1B);
+
+                if (randColor == 0)
+                {
+                    CreateBox(redPrefab, spawnPositions[1][0]);
+                }
+                else if (randColor == 1)
+                {
+                    CreateBox(bluePrefab, spawnPositions[1][2]);
+                }
+                else
+                {
+
+                }
             }
-            if (randWall == 8)
+
+            else if (randWall == 8)
             {
                 CreateBox(horizontalWall, pos1B);
+
+                if (randColor == 0)
+                {
+                    CreateBox(redPrefab, spawnPositions[2][1]);
+                }
+                else if (randColor == 1)
+                {
+                    CreateBox(bluePrefab, spawnPositions[2][1]);
+                }
+                else
+                {
+
+                }
             }
-            if (randWall == 9)
+
+            else if (randWall == 9)
             {
                 CreateBox(verticalWall, pos1A);
                 CreateBox(verticalWall, pos1C);
+
                 if (randColor == 0)
                 {
                     CreateBox(redPrefab, spawnPositions[1][1]);
@@ -86,31 +117,10 @@ public class BoxManager : MonoBehaviour
                 }
                 else
                 {
+                    CreateBox(bluePrefab, spawnPositions[0][1]);
                     CreateBox(redPrefab, spawnPositions[1][1]);
-                    do
-                    {
-                        randRow2 = Random.Range(0, 3);
-                    }
-                    while (randRow2 == randRow1);
-                    CreateBox(bluePrefab, spawnPositions[randRow2][1]);
                 }
             }
-            //if (randWall < 6)
-            //{
-            //if (randColor == 0)
-            //{
-            //    CreateBox(redPrefab, pos1A);
-            //}
-            //else if (randColor == 1)
-            //{
-            //    CreateBox(bluePrefab, pos2A);
-            //}
-            //else
-            //{
-            //    CreateBox(redPrefab, pos1A);
-            //    CreateBox(bluePrefab, pos2A);
-            //}
-            //}
             timer = 0;
         }
     }
