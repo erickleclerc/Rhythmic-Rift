@@ -7,7 +7,8 @@ public class Quit : MonoBehaviour
 {
     public Button quitButton;
     [SerializeField] private TextMeshProUGUI gameText;
-    
+    [SerializeField] private AudioSource audioExiting;
+
     private void Awake()
     {
         quitButton.onClick.AddListener(QuitNow);
@@ -20,7 +21,7 @@ public class Quit : MonoBehaviour
         {
             RenderSettings.skybox.SetFloat("_Exposure", i);
         }
-
+        audioExiting.Play();
         StartCoroutine(QuitApp());        
     }
 
