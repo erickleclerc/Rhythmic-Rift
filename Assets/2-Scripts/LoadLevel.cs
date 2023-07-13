@@ -10,7 +10,7 @@ public class LoadLevel : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI gameText;
     [SerializeField] private string levelname = "Track1";
-    [SerializeField] private AudioSource audioLoad;
+    //[SerializeField] private AudioSource audioLoad; //REMOVE AUDIO CAUSING ISSUES WITH SCENE
 
     void Awake()
     {
@@ -21,12 +21,9 @@ public class LoadLevel : MonoBehaviour
     // Update is called once per frame
     public void LoadScene()
     {        
-        gameText.text = $"Loading {levelname}";        
-        //for (int i = 3; i > 0; i--) //see if fade to 
-        //{
-        //    RenderSettings.skybox.SetFloat("_Exposure", i);
-        //}
-        audioLoad.PlayDelayed(.2f);
+        gameText.text = $"Loading {levelname}";
+
+        //audioLoad.PlayDelayed(.2f); //REMOVE AUDIO CAUSING ISSUES WITH SCENE
         StartCoroutine(LoadTrack());
     }
 
