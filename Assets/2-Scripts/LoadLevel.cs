@@ -29,8 +29,9 @@ public class LoadLevel : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Hand")
+        if (other.gameObject.tag == "LeftHand" || other.gameObject.tag == "RightHand")
         LoadScene();
+        Debug.Log("Loading Scene");
     }
 
     IEnumerator LoadTrack()

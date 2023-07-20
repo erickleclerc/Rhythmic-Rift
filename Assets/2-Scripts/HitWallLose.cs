@@ -24,6 +24,7 @@ public class HitWallLose : MonoBehaviour
     IEnumerator RestartScene()
     {
         yield return new WaitForSecondsRealtime(7);
+        Time.timeScale = 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
