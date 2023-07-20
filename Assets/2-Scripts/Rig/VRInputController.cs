@@ -29,13 +29,7 @@ public class VRInputController : MonoBehaviour
     {
         XRHMD hmd = InputSystem.GetDevice<XRHMD>();
 
-        if (!debugging)
-        {
-            JoystickLeft = actions.MotorcycleControls.TurnSignals.ReadValue<Vector2>();
-            //JoystickRight = actions.Default.JoystickRight.ReadValue<Vector2>();
+       
 
-            if (actions.MotorcycleControls.TurnSignals.WasPerformedThisFrame()) ThumbPressedLeft = true;
-            else if (actions.MotorcycleControls.TurnSignals.WasReleasedThisFrame()) ThumbPressedLeft = false;
-        }
     }
 }

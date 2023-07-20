@@ -24,94 +24,22 @@ public partial class @VRInputActions : IInputActionCollection2, IDisposable
     ""name"": ""VRInputActions"",
     ""maps"": [
         {
-            ""name"": ""Motorcycle Controls"",
-            ""id"": ""bf505325-f42b-4040-8407-4deb3105d717"",
+            ""name"": ""RhythmRift Controls"",
+            ""id"": ""93399a28-6482-4aa1-bc53-4aa2c05ab4e0"",
             ""actions"": [
                 {
-                    ""name"": ""Grab Handle Bars"",
+                    ""name"": ""Pause Game"",
                     ""type"": ""Button"",
-                    ""id"": ""28d22e18-8ae2-4ebc-9902-bf885ab1cd4a"",
+                    ""id"": ""b0f0ee2d-317c-42a9-9657-fa81c6d379d9"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Front Brake Grabbing"",
+                    ""name"": ""ReturnToMainMenu"",
                     ""type"": ""Button"",
-                    ""id"": ""8b44e71d-ae4d-4117-bc2f-1581efe6842f"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""Clutch Grabbing"",
-                    ""type"": ""Value"",
-                    ""id"": ""763eac74-33cf-4d08-b4e7-50617cee55c5"",
-                    ""expectedControlType"": """",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": true
-                },
-                {
-                    ""name"": ""Kills Switch Starter"",
-                    ""type"": ""Button"",
-                    ""id"": ""47fd1a14-a5f4-45f7-a044-bd1461df4a38"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""Turn Signals"",
-                    ""type"": ""Value"",
-                    ""id"": ""403b8080-c4c6-4808-92ef-36017b44d31f"",
-                    ""expectedControlType"": """",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": true
-                },
-                {
-                    ""name"": ""Horn Button"",
-                    ""type"": ""Button"",
-                    ""id"": ""412e4716-5ae0-4114-9191-7ebe313e5563"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""Back Brake Press"",
-                    ""type"": ""Button"",
-                    ""id"": ""01333e13-96bb-41a4-84a4-6c26d9a6626a"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""Shifter Pedal Up"",
-                    ""type"": ""Button"",
-                    ""id"": ""cc30a282-7568-4dcd-924c-905434b77dc8"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""Shifter Pedal Down"",
-                    ""type"": ""Button"",
-                    ""id"": ""8d19fd33-d965-4fca-b6a2-efe87e84e26f"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""Throttle"",
-                    ""type"": ""Button"",
-                    ""id"": ""5623b560-779c-437d-8378-905008ba24e3"",
+                    ""id"": ""273c211a-5f19-4e67-945c-93bcebb012ce"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -121,155 +49,23 @@ public partial class @VRInputActions : IInputActionCollection2, IDisposable
             ""bindings"": [
                 {
                     ""name"": """",
-                    ""id"": ""7b03b731-fd19-4b1f-bbd5-65d368290cd1"",
-                    ""path"": ""<OculusTouchController>{RightHand}/gripPressed"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Grab Handle Bars"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""95c267cf-e64a-4cf0-8a8e-1163455530d5"",
-                    ""path"": ""<OculusTouchController>{LeftHand}/gripPressed"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Grab Handle Bars"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""3f48ee7e-8d1f-42b9-b99a-6ec1e8c211bb"",
-                    ""path"": ""<OculusTouchController>{RightHand}/triggerPressed"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Front Brake Grabbing"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""71d9b74e-1fea-4be7-9b49-2046aa24b1ac"",
-                    ""path"": ""<Keyboard>/s"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Front Brake Grabbing"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""abd09180-342d-4e42-9cf0-943e18fe23b9"",
-                    ""path"": ""<OculusTouchController>{LeftHand}/triggerPressed"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Clutch Grabbing"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""5c5c41fa-b8ec-46da-ac7d-2b64c22882e0"",
-                    ""path"": ""<Keyboard>/c"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Clutch Grabbing"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""0c595ae9-6bed-4578-a732-3f0eac048cf2"",
+                    ""id"": ""7ed09592-8d49-4b2b-a4f6-74cf8c4e5af2"",
                     ""path"": ""<OculusTouchController>{RightHand}/primaryButton"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Kills Switch Starter"",
+                    ""action"": ""Pause Game"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""f490bb24-854e-4fe4-85f1-5c5c7a111a73"",
-                    ""path"": ""<OculusTouchController>{LeftHand}/thumbstick/y"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Turn Signals"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""c60e3bb2-4f84-43ec-912b-8ddbafaeb4a1"",
+                    ""id"": ""fab53955-d261-4e9e-9be0-8acb85a1f681"",
                     ""path"": ""<OculusTouchController>{LeftHand}/primaryButton"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Horn Button"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""be20080d-398b-4064-baa8-3701c962f206"",
-                    ""path"": ""<Keyboard>/d"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Back Brake Press"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""34771b38-e778-4d1b-b5d2-348dcfd8017e"",
-                    ""path"": ""<Keyboard>/upArrow"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Shifter Pedal Up"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""6420d5e9-f7a9-4eb6-9831-b18d15544d30"",
-                    ""path"": ""<Keyboard>/a"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Throttle"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""86ed7b2d-c19e-4097-81f6-b8bbd443e164"",
-                    ""path"": ""<OculusTouchController>/secondaryButton"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Throttle"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""8c115f10-7612-43b2-8b02-0b49349d16a9"",
-                    ""path"": ""<Keyboard>/downArrow"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Shifter Pedal Down"",
+                    ""action"": ""ReturnToMainMenu"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -278,18 +74,10 @@ public partial class @VRInputActions : IInputActionCollection2, IDisposable
     ],
     ""controlSchemes"": []
 }");
-        // Motorcycle Controls
-        m_MotorcycleControls = asset.FindActionMap("Motorcycle Controls", throwIfNotFound: true);
-        m_MotorcycleControls_GrabHandleBars = m_MotorcycleControls.FindAction("Grab Handle Bars", throwIfNotFound: true);
-        m_MotorcycleControls_FrontBrakeGrabbing = m_MotorcycleControls.FindAction("Front Brake Grabbing", throwIfNotFound: true);
-        m_MotorcycleControls_ClutchGrabbing = m_MotorcycleControls.FindAction("Clutch Grabbing", throwIfNotFound: true);
-        m_MotorcycleControls_KillsSwitchStarter = m_MotorcycleControls.FindAction("Kills Switch Starter", throwIfNotFound: true);
-        m_MotorcycleControls_TurnSignals = m_MotorcycleControls.FindAction("Turn Signals", throwIfNotFound: true);
-        m_MotorcycleControls_HornButton = m_MotorcycleControls.FindAction("Horn Button", throwIfNotFound: true);
-        m_MotorcycleControls_BackBrakePress = m_MotorcycleControls.FindAction("Back Brake Press", throwIfNotFound: true);
-        m_MotorcycleControls_ShifterPedalUp = m_MotorcycleControls.FindAction("Shifter Pedal Up", throwIfNotFound: true);
-        m_MotorcycleControls_ShifterPedalDown = m_MotorcycleControls.FindAction("Shifter Pedal Down", throwIfNotFound: true);
-        m_MotorcycleControls_Throttle = m_MotorcycleControls.FindAction("Throttle", throwIfNotFound: true);
+        // RhythmRift Controls
+        m_RhythmRiftControls = asset.FindActionMap("RhythmRift Controls", throwIfNotFound: true);
+        m_RhythmRiftControls_PauseGame = m_RhythmRiftControls.FindAction("Pause Game", throwIfNotFound: true);
+        m_RhythmRiftControls_ReturnToMainMenu = m_RhythmRiftControls.FindAction("ReturnToMainMenu", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -346,121 +134,49 @@ public partial class @VRInputActions : IInputActionCollection2, IDisposable
         return asset.FindBinding(bindingMask, out action);
     }
 
-    // Motorcycle Controls
-    private readonly InputActionMap m_MotorcycleControls;
-    private IMotorcycleControlsActions m_MotorcycleControlsActionsCallbackInterface;
-    private readonly InputAction m_MotorcycleControls_GrabHandleBars;
-    private readonly InputAction m_MotorcycleControls_FrontBrakeGrabbing;
-    private readonly InputAction m_MotorcycleControls_ClutchGrabbing;
-    private readonly InputAction m_MotorcycleControls_KillsSwitchStarter;
-    private readonly InputAction m_MotorcycleControls_TurnSignals;
-    private readonly InputAction m_MotorcycleControls_HornButton;
-    private readonly InputAction m_MotorcycleControls_BackBrakePress;
-    private readonly InputAction m_MotorcycleControls_ShifterPedalUp;
-    private readonly InputAction m_MotorcycleControls_ShifterPedalDown;
-    private readonly InputAction m_MotorcycleControls_Throttle;
-    public struct MotorcycleControlsActions
+    // RhythmRift Controls
+    private readonly InputActionMap m_RhythmRiftControls;
+    private IRhythmRiftControlsActions m_RhythmRiftControlsActionsCallbackInterface;
+    private readonly InputAction m_RhythmRiftControls_PauseGame;
+    private readonly InputAction m_RhythmRiftControls_ReturnToMainMenu;
+    public struct RhythmRiftControlsActions
     {
         private @VRInputActions m_Wrapper;
-        public MotorcycleControlsActions(@VRInputActions wrapper) { m_Wrapper = wrapper; }
-        public InputAction @GrabHandleBars => m_Wrapper.m_MotorcycleControls_GrabHandleBars;
-        public InputAction @FrontBrakeGrabbing => m_Wrapper.m_MotorcycleControls_FrontBrakeGrabbing;
-        public InputAction @ClutchGrabbing => m_Wrapper.m_MotorcycleControls_ClutchGrabbing;
-        public InputAction @KillsSwitchStarter => m_Wrapper.m_MotorcycleControls_KillsSwitchStarter;
-        public InputAction @TurnSignals => m_Wrapper.m_MotorcycleControls_TurnSignals;
-        public InputAction @HornButton => m_Wrapper.m_MotorcycleControls_HornButton;
-        public InputAction @BackBrakePress => m_Wrapper.m_MotorcycleControls_BackBrakePress;
-        public InputAction @ShifterPedalUp => m_Wrapper.m_MotorcycleControls_ShifterPedalUp;
-        public InputAction @ShifterPedalDown => m_Wrapper.m_MotorcycleControls_ShifterPedalDown;
-        public InputAction @Throttle => m_Wrapper.m_MotorcycleControls_Throttle;
-        public InputActionMap Get() { return m_Wrapper.m_MotorcycleControls; }
+        public RhythmRiftControlsActions(@VRInputActions wrapper) { m_Wrapper = wrapper; }
+        public InputAction @PauseGame => m_Wrapper.m_RhythmRiftControls_PauseGame;
+        public InputAction @ReturnToMainMenu => m_Wrapper.m_RhythmRiftControls_ReturnToMainMenu;
+        public InputActionMap Get() { return m_Wrapper.m_RhythmRiftControls; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
         public bool enabled => Get().enabled;
-        public static implicit operator InputActionMap(MotorcycleControlsActions set) { return set.Get(); }
-        public void SetCallbacks(IMotorcycleControlsActions instance)
+        public static implicit operator InputActionMap(RhythmRiftControlsActions set) { return set.Get(); }
+        public void SetCallbacks(IRhythmRiftControlsActions instance)
         {
-            if (m_Wrapper.m_MotorcycleControlsActionsCallbackInterface != null)
+            if (m_Wrapper.m_RhythmRiftControlsActionsCallbackInterface != null)
             {
-                @GrabHandleBars.started -= m_Wrapper.m_MotorcycleControlsActionsCallbackInterface.OnGrabHandleBars;
-                @GrabHandleBars.performed -= m_Wrapper.m_MotorcycleControlsActionsCallbackInterface.OnGrabHandleBars;
-                @GrabHandleBars.canceled -= m_Wrapper.m_MotorcycleControlsActionsCallbackInterface.OnGrabHandleBars;
-                @FrontBrakeGrabbing.started -= m_Wrapper.m_MotorcycleControlsActionsCallbackInterface.OnFrontBrakeGrabbing;
-                @FrontBrakeGrabbing.performed -= m_Wrapper.m_MotorcycleControlsActionsCallbackInterface.OnFrontBrakeGrabbing;
-                @FrontBrakeGrabbing.canceled -= m_Wrapper.m_MotorcycleControlsActionsCallbackInterface.OnFrontBrakeGrabbing;
-                @ClutchGrabbing.started -= m_Wrapper.m_MotorcycleControlsActionsCallbackInterface.OnClutchGrabbing;
-                @ClutchGrabbing.performed -= m_Wrapper.m_MotorcycleControlsActionsCallbackInterface.OnClutchGrabbing;
-                @ClutchGrabbing.canceled -= m_Wrapper.m_MotorcycleControlsActionsCallbackInterface.OnClutchGrabbing;
-                @KillsSwitchStarter.started -= m_Wrapper.m_MotorcycleControlsActionsCallbackInterface.OnKillsSwitchStarter;
-                @KillsSwitchStarter.performed -= m_Wrapper.m_MotorcycleControlsActionsCallbackInterface.OnKillsSwitchStarter;
-                @KillsSwitchStarter.canceled -= m_Wrapper.m_MotorcycleControlsActionsCallbackInterface.OnKillsSwitchStarter;
-                @TurnSignals.started -= m_Wrapper.m_MotorcycleControlsActionsCallbackInterface.OnTurnSignals;
-                @TurnSignals.performed -= m_Wrapper.m_MotorcycleControlsActionsCallbackInterface.OnTurnSignals;
-                @TurnSignals.canceled -= m_Wrapper.m_MotorcycleControlsActionsCallbackInterface.OnTurnSignals;
-                @HornButton.started -= m_Wrapper.m_MotorcycleControlsActionsCallbackInterface.OnHornButton;
-                @HornButton.performed -= m_Wrapper.m_MotorcycleControlsActionsCallbackInterface.OnHornButton;
-                @HornButton.canceled -= m_Wrapper.m_MotorcycleControlsActionsCallbackInterface.OnHornButton;
-                @BackBrakePress.started -= m_Wrapper.m_MotorcycleControlsActionsCallbackInterface.OnBackBrakePress;
-                @BackBrakePress.performed -= m_Wrapper.m_MotorcycleControlsActionsCallbackInterface.OnBackBrakePress;
-                @BackBrakePress.canceled -= m_Wrapper.m_MotorcycleControlsActionsCallbackInterface.OnBackBrakePress;
-                @ShifterPedalUp.started -= m_Wrapper.m_MotorcycleControlsActionsCallbackInterface.OnShifterPedalUp;
-                @ShifterPedalUp.performed -= m_Wrapper.m_MotorcycleControlsActionsCallbackInterface.OnShifterPedalUp;
-                @ShifterPedalUp.canceled -= m_Wrapper.m_MotorcycleControlsActionsCallbackInterface.OnShifterPedalUp;
-                @ShifterPedalDown.started -= m_Wrapper.m_MotorcycleControlsActionsCallbackInterface.OnShifterPedalDown;
-                @ShifterPedalDown.performed -= m_Wrapper.m_MotorcycleControlsActionsCallbackInterface.OnShifterPedalDown;
-                @ShifterPedalDown.canceled -= m_Wrapper.m_MotorcycleControlsActionsCallbackInterface.OnShifterPedalDown;
-                @Throttle.started -= m_Wrapper.m_MotorcycleControlsActionsCallbackInterface.OnThrottle;
-                @Throttle.performed -= m_Wrapper.m_MotorcycleControlsActionsCallbackInterface.OnThrottle;
-                @Throttle.canceled -= m_Wrapper.m_MotorcycleControlsActionsCallbackInterface.OnThrottle;
+                @PauseGame.started -= m_Wrapper.m_RhythmRiftControlsActionsCallbackInterface.OnPauseGame;
+                @PauseGame.performed -= m_Wrapper.m_RhythmRiftControlsActionsCallbackInterface.OnPauseGame;
+                @PauseGame.canceled -= m_Wrapper.m_RhythmRiftControlsActionsCallbackInterface.OnPauseGame;
+                @ReturnToMainMenu.started -= m_Wrapper.m_RhythmRiftControlsActionsCallbackInterface.OnReturnToMainMenu;
+                @ReturnToMainMenu.performed -= m_Wrapper.m_RhythmRiftControlsActionsCallbackInterface.OnReturnToMainMenu;
+                @ReturnToMainMenu.canceled -= m_Wrapper.m_RhythmRiftControlsActionsCallbackInterface.OnReturnToMainMenu;
             }
-            m_Wrapper.m_MotorcycleControlsActionsCallbackInterface = instance;
+            m_Wrapper.m_RhythmRiftControlsActionsCallbackInterface = instance;
             if (instance != null)
             {
-                @GrabHandleBars.started += instance.OnGrabHandleBars;
-                @GrabHandleBars.performed += instance.OnGrabHandleBars;
-                @GrabHandleBars.canceled += instance.OnGrabHandleBars;
-                @FrontBrakeGrabbing.started += instance.OnFrontBrakeGrabbing;
-                @FrontBrakeGrabbing.performed += instance.OnFrontBrakeGrabbing;
-                @FrontBrakeGrabbing.canceled += instance.OnFrontBrakeGrabbing;
-                @ClutchGrabbing.started += instance.OnClutchGrabbing;
-                @ClutchGrabbing.performed += instance.OnClutchGrabbing;
-                @ClutchGrabbing.canceled += instance.OnClutchGrabbing;
-                @KillsSwitchStarter.started += instance.OnKillsSwitchStarter;
-                @KillsSwitchStarter.performed += instance.OnKillsSwitchStarter;
-                @KillsSwitchStarter.canceled += instance.OnKillsSwitchStarter;
-                @TurnSignals.started += instance.OnTurnSignals;
-                @TurnSignals.performed += instance.OnTurnSignals;
-                @TurnSignals.canceled += instance.OnTurnSignals;
-                @HornButton.started += instance.OnHornButton;
-                @HornButton.performed += instance.OnHornButton;
-                @HornButton.canceled += instance.OnHornButton;
-                @BackBrakePress.started += instance.OnBackBrakePress;
-                @BackBrakePress.performed += instance.OnBackBrakePress;
-                @BackBrakePress.canceled += instance.OnBackBrakePress;
-                @ShifterPedalUp.started += instance.OnShifterPedalUp;
-                @ShifterPedalUp.performed += instance.OnShifterPedalUp;
-                @ShifterPedalUp.canceled += instance.OnShifterPedalUp;
-                @ShifterPedalDown.started += instance.OnShifterPedalDown;
-                @ShifterPedalDown.performed += instance.OnShifterPedalDown;
-                @ShifterPedalDown.canceled += instance.OnShifterPedalDown;
-                @Throttle.started += instance.OnThrottle;
-                @Throttle.performed += instance.OnThrottle;
-                @Throttle.canceled += instance.OnThrottle;
+                @PauseGame.started += instance.OnPauseGame;
+                @PauseGame.performed += instance.OnPauseGame;
+                @PauseGame.canceled += instance.OnPauseGame;
+                @ReturnToMainMenu.started += instance.OnReturnToMainMenu;
+                @ReturnToMainMenu.performed += instance.OnReturnToMainMenu;
+                @ReturnToMainMenu.canceled += instance.OnReturnToMainMenu;
             }
         }
     }
-    public MotorcycleControlsActions @MotorcycleControls => new MotorcycleControlsActions(this);
-    public interface IMotorcycleControlsActions
+    public RhythmRiftControlsActions @RhythmRiftControls => new RhythmRiftControlsActions(this);
+    public interface IRhythmRiftControlsActions
     {
-        void OnGrabHandleBars(InputAction.CallbackContext context);
-        void OnFrontBrakeGrabbing(InputAction.CallbackContext context);
-        void OnClutchGrabbing(InputAction.CallbackContext context);
-        void OnKillsSwitchStarter(InputAction.CallbackContext context);
-        void OnTurnSignals(InputAction.CallbackContext context);
-        void OnHornButton(InputAction.CallbackContext context);
-        void OnBackBrakePress(InputAction.CallbackContext context);
-        void OnShifterPedalUp(InputAction.CallbackContext context);
-        void OnShifterPedalDown(InputAction.CallbackContext context);
-        void OnThrottle(InputAction.CallbackContext context);
+        void OnPauseGame(InputAction.CallbackContext context);
+        void OnReturnToMainMenu(InputAction.CallbackContext context);
     }
 }
