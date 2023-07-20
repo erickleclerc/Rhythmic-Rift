@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.013338938, g: 0.013271982, b: 0.013338938, a: 1}
+  m_IndirectSpecularColor: {r: 0.013336157, g: 0.0132692605, b: 0.013336157, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -733,7 +733,6 @@ MonoBehaviour:
   loadSceneButton: {fileID: 33471450}
   gameText: {fileID: 1827281301990806246}
   levelname: Track1
-  audioLoad: {fileID: 0}
 --- !u!1 &33471452 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6330034564615805663, guid: a9e7aea0b8c5c774eaef4e5428d93987, type: 3}
@@ -765,7 +764,6 @@ MonoBehaviour:
   loadSceneButton: {fileID: 33471453}
   gameText: {fileID: 1827281301990806246}
   levelname: Track2
-  audioLoad: {fileID: 0}
 --- !u!1 &51064879
 GameObject:
   m_ObjectHideFlags: 0
@@ -1652,88 +1650,8 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1714609953, guid: 8d64b15c0d175fd4e8f3a6df5e839e01, type: 3}
-      propertyPath: Loop
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1714609953, guid: 8d64b15c0d175fd4e8f3a6df5e839e01, type: 3}
-      propertyPath: Priority
-      value: 108
-      objectReference: {fileID: 0}
-    - target: {fileID: 1714609953, guid: 8d64b15c0d175fd4e8f3a6df5e839e01, type: 3}
-      propertyPath: m_Volume
-      value: 0.317
-      objectReference: {fileID: 0}
-    - target: {fileID: 1714609953, guid: 8d64b15c0d175fd4e8f3a6df5e839e01, type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 6bccdcefaa864fe43a2cda8639fea7f9, type: 3}
-    - target: {fileID: 1714609953, guid: 8d64b15c0d175fd4e8f3a6df5e839e01, type: 3}
-      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
-      value: 0.269
-      objectReference: {fileID: 0}
-    - target: {fileID: 544616973287194132, guid: 8d64b15c0d175fd4e8f3a6df5e839e01, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1607073657624058112, guid: 8d64b15c0d175fd4e8f3a6df5e839e01, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 2333858618050464970, guid: 8d64b15c0d175fd4e8f3a6df5e839e01, type: 3}
-      propertyPath: m_UseGravity
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2333858618050464970, guid: 8d64b15c0d175fd4e8f3a6df5e839e01, type: 3}
-      propertyPath: m_IsKinematic
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2730240908105073232, guid: 8d64b15c0d175fd4e8f3a6df5e839e01, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2946317255648755853, guid: 8d64b15c0d175fd4e8f3a6df5e839e01, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 2946317255648755853, guid: 8d64b15c0d175fd4e8f3a6df5e839e01, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 2946317255648755853, guid: 8d64b15c0d175fd4e8f3a6df5e839e01, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 2946317255648755853, guid: 8d64b15c0d175fd4e8f3a6df5e839e01, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7096313159827700650, guid: 8d64b15c0d175fd4e8f3a6df5e839e01, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 7791905972287809773, guid: 8d64b15c0d175fd4e8f3a6df5e839e01, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 7791905972287809773, guid: 8d64b15c0d175fd4e8f3a6df5e839e01, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 7791905972287809773, guid: 8d64b15c0d175fd4e8f3a6df5e839e01, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 7791905972287809773, guid: 8d64b15c0d175fd4e8f3a6df5e839e01, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7885727701014425779, guid: 8d64b15c0d175fd4e8f3a6df5e839e01, type: 3}
       propertyPath: m_Name
-      value: VRRig
-      objectReference: {fileID: 0}
-    - target: {fileID: 7885727701014425779, guid: 8d64b15c0d175fd4e8f3a6df5e839e01, type: 3}
-      propertyPath: m_TagString
       value: VRRig
       objectReference: {fileID: 0}
     - target: {fileID: 8478793527809171336, guid: 8d64b15c0d175fd4e8f3a6df5e839e01, type: 3}
@@ -1815,7 +1733,6 @@ MonoBehaviour:
   loadSceneButton: {fileID: 33471453}
   gameText: {fileID: 1827281301990806246}
   levelname: Track2
-  audioLoad: {fileID: 0}
 --- !u!65 &1416916787
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1905,7 +1822,6 @@ MonoBehaviour:
   loadSceneButton: {fileID: 33471450}
   gameText: {fileID: 1827281301990806246}
   levelname: Track1
-  audioLoad: {fileID: 0}
 --- !u!1 &1796460525
 GameObject:
   m_ObjectHideFlags: 0

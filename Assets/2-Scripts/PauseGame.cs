@@ -25,10 +25,15 @@ public class PauseGame : MonoBehaviour
         if (inputActions.RhythmRiftControls.PauseGame.IsPressed())
         {
             if (isPaused == false)
-            Time.timeScale = 0;
+            {
+                isPaused = true;
+                Time.timeScale = 0;
+            }
             else if (isPaused == true)
+            {
+                isPaused = false;
                 Time.timeScale = 1;
-
+            }
         }
     }
 }
