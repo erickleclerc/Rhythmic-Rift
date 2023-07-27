@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: -8189784067885077075}
   - component: {fileID: -5171239742407800656}
   - component: {fileID: -4651297175445241493}
+  - component: {fileID: 7118156655149670917}
   m_Layer: 0
   m_Name: P_RedBox
   m_TagString: Red Box
@@ -147,6 +148,20 @@ MonoBehaviour:
   rhythmTiming1: {fileID: 0}
   distance: 10
   time: 2
+--- !u!114 &7118156655149670917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7186858239219390794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67581a91a5aa2db4e8fbe37796d502a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rhythmTimingClass: {fileID: 0}
+  childCircleLight: {fileID: 8994776085786134194}
 --- !u!1001 &1910150817025966903
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -228,6 +243,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ad67c9b1a5cc794189dbdb320b7321d, type: 3}
+--- !u!1 &8994776085786134194 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7372926117943395717, guid: 1ad67c9b1a5cc794189dbdb320b7321d, type: 3}
+  m_PrefabInstance: {fileID: 1910150817025966903}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &9047631364609644295 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7425763735332770864, guid: 1ad67c9b1a5cc794189dbdb320b7321d, type: 3}

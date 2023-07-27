@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 5939846720341277328}
   - component: {fileID: -1111248897068232044}
   - component: {fileID: 6506501222863265259}
+  - component: {fileID: 8786386260896115247}
   m_Layer: 6
   m_Name: P_GreenBox
   m_TagString: Green Box
@@ -165,6 +166,20 @@ MonoBehaviour:
   rhythmTiming1: {fileID: 0}
   distance: 10
   time: 2
+--- !u!114 &8786386260896115247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7186858239219390794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67581a91a5aa2db4e8fbe37796d502a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rhythmTimingClass: {fileID: 0}
+  childCircleLight: {fileID: 2285072844058603119}
 --- !u!1001 &3210032216886794166
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -487,5 +502,10 @@ PrefabInstance:
 --- !u!4 &2227676935206125530 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7425763735332770864, guid: 1ad67c9b1a5cc794189dbdb320b7321d, type: 3}
+  m_PrefabInstance: {fileID: 8784218952469736426}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2285072844058603119 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7372926117943395717, guid: 1ad67c9b1a5cc794189dbdb320b7321d, type: 3}
   m_PrefabInstance: {fileID: 8784218952469736426}
   m_PrefabAsset: {fileID: 0}
