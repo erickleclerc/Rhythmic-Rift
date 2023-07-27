@@ -13,6 +13,7 @@ public class HitWallLose : MonoBehaviour
         {
             Destroy(other.gameObject);
             gameOverText.SetActive(true);
+            gameOverText.GetComponent<TextMeshPro>().text = "You hit a wall! Try Again!";
 
             //PAUSE EVERTYING
             Time.timeScale = 0;
