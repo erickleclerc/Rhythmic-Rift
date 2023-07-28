@@ -283,7 +283,7 @@ MonoBehaviour:
   songSource: {fileID: 22877079}
   isOnBeat: 0
   BPM: 156
-  distance: 10
+  distance: 20
   time: 2
 --- !u!4 &51064881
 Transform:

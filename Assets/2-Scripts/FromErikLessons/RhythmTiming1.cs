@@ -10,7 +10,7 @@ public class RhythmTiming1 : MonoBehaviour
     public bool isOnBeat = false;
 
     //public TextMeshProUGUI timeText;
-
+    
     public int BPM = 96;
 
     private int previousBeat = -1;
