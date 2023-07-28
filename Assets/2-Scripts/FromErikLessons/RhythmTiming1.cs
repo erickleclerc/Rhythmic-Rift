@@ -94,6 +94,8 @@ public class RhythmTiming1 : MonoBehaviour
 
                 hasArrived = true;
             }
+
+
         }
     }
 }

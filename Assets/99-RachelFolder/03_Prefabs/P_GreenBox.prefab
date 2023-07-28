@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 5939846720341277328}
   - component: {fileID: -1111248897068232044}
   - component: {fileID: 6506501222863265259}
+  - component: {fileID: 6323783783828970720}
   m_Layer: 6
   m_Name: P_GreenBox
   m_TagString: Green Box
@@ -165,6 +166,20 @@ MonoBehaviour:
   rhythmTiming1: {fileID: 0}
   distance: 10
   time: 2
+--- !u!114 &6323783783828970720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7186858239219390794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0117e8d442673544891530fb62778e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showOnBeatText: {fileID: 6141384288476425170, guid: 2b6e18c71d71441438d6d7dbab82337e, type: 3}
+  rhythmTiming1: {fileID: 0}
 --- !u!1001 &3210032216886794166
 PrefabInstance:
   m_ObjectHideFlags: 0

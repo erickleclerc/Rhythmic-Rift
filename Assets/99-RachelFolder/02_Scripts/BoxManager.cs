@@ -10,13 +10,18 @@ public class BoxManager : MonoBehaviour
     public GameObject bluePrefab;
     public GameObject verticalWall;
     public GameObject horizontalWall;
+
     public Transform pos1A, pos1B, pos1C;
     public Transform pos2A, pos2B, pos2C;
     public Transform pos3A, pos3B, pos3C;
     private Transform[][] spawnPositions;
+
+
     public float timeToMakeBox;
     public float speed;
     private float timer;
+
+
     private void Start()
     {
         spawnPositions = new Transform[][]
@@ -27,9 +32,11 @@ public class BoxManager : MonoBehaviour
         };
         Debug.Log("spawnPositions[0][2]: " + spawnPositions[0][2].name);
     }
+
     // Update is called once per frame
     void Update()
     {
+
         timer += Time.deltaTime;
         if (timer > timeToMakeBox)
         {
