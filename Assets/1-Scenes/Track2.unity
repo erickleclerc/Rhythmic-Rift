@@ -357,7 +357,7 @@ GameObject:
   - component: {fileID: 318335346}
   m_Layer: 0
   m_Name: NunchakusLeft
-  m_TagString: Hand
+  m_TagString: LeftHand
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -924,7 +924,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5819969013278664358, guid: a7e129180f56221408e96959c242b318, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 13
+      value: 19.9
       objectReference: {fileID: 0}
     - target: {fileID: 5819969013278664358, guid: a7e129180f56221408e96959c242b318, type: 3}
       propertyPath: m_LocalRotation.w
@@ -944,7 +944,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5819969013278664358, guid: a7e129180f56221408e96959c242b318, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -3.53
+      value: -7.8
       objectReference: {fileID: 0}
     - target: {fileID: 5819969013278664358, guid: a7e129180f56221408e96959c242b318, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -1098,7 +1098,7 @@ GameObject:
   - component: {fileID: 1057154654}
   m_Layer: 0
   m_Name: NunchakusRight
-  m_TagString: Hand
+  m_TagString: RightHand
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1190,7 +1190,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1057154653}
   m_LocalRotation: {x: -0.7069991, y: 0.012340746, z: 0.012340746, w: 0.7069991}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0.014}
   m_LocalScale: {x: 0.09999999, y: 1.3050345, z: 0.100000046}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1367,6 +1367,18 @@ PrefabInstance:
       propertyPath: gameOverText
       value: 
       objectReference: {fileID: 875468251}
+    - target: {fileID: 39546604, guid: 8d64b15c0d175fd4e8f3a6df5e839e01, type: 3}
+      propertyPath: otherTexts.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 39546604, guid: 8d64b15c0d175fd4e8f3a6df5e839e01, type: 3}
+      propertyPath: otherTexts.Array.data[0]
+      value: 
+      objectReference: {fileID: 1869207125}
+    - target: {fileID: 39546604, guid: 8d64b15c0d175fd4e8f3a6df5e839e01, type: 3}
+      propertyPath: otherTexts.Array.data[1]
+      value: 
+      objectReference: {fileID: 6114438018299457525}
     - target: {fileID: 1714609953, guid: 8d64b15c0d175fd4e8f3a6df5e839e01, type: 3}
       propertyPath: m_audioClip
       value: 
@@ -1383,6 +1395,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 356cc581a014fb942acb15a5fbaa8867, type: 2}
+    - target: {fileID: 1084079410514808169, guid: 8d64b15c0d175fd4e8f3a6df5e839e01, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0
+      objectReference: {fileID: 0}
     - target: {fileID: 1889399497955725045, guid: 8d64b15c0d175fd4e8f3a6df5e839e01, type: 3}
       propertyPath: m_IsTrigger
       value: 1
@@ -1442,6 +1458,14 @@ PrefabInstance:
     - target: {fileID: 4627420814027200258, guid: 8d64b15c0d175fd4e8f3a6df5e839e01, type: 3}
       propertyPath: m_IsTrigger
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5689408785142233925, guid: 8d64b15c0d175fd4e8f3a6df5e839e01, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 5692645775719258798, guid: 8d64b15c0d175fd4e8f3a6df5e839e01, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 5733479328385585741, guid: 8d64b15c0d175fd4e8f3a6df5e839e01, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2482,6 +2506,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0c7d37332fd72c41ad217bf0f61209b, type: 3}
+--- !u!1 &6114438018299457525 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6114438018254450810, guid: b0c7d37332fd72c41ad217bf0f61209b, type: 3}
+  m_PrefabInstance: {fileID: 6114438018299457524}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7001894255678416746
 PrefabInstance:
   m_ObjectHideFlags: 0
