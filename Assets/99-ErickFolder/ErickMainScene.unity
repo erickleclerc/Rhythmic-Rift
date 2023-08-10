@@ -731,6 +731,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverText: {fileID: 997326651}
+  otherTexts: []
 --- !u!1 &650581298
 GameObject:
   m_ObjectHideFlags: 0
@@ -934,7 +935,7 @@ MonoBehaviour:
   movingTarget: {fileID: 650581298}
   target: {fileID: 650581298}
   songSource: {fileID: 1714609953}
-  BPM: 96
+  BPM: 125
   distance: 10
   time: 2
 --- !u!4 &821391482
@@ -966,7 +967,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   songSource: {fileID: 1714609953}
   isOnBeat: 0
-  BPM: 96
+  BPM: 125
   distance: 10
   time: 2
 --- !u!1 &997326651
@@ -1271,7 +1272,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1337047653
 MonoBehaviour:
   m_ObjectHideFlags: 0

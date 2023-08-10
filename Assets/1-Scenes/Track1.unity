@@ -676,8 +676,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   songSource: {fileID: 1579723448}
   isOnBeat: 0
-  BPM: 96
-  distance: 10
+  BPM: 125
+  distance: 15
   time: 2
 --- !u!114 &1010531485
 MonoBehaviour:
@@ -1268,7 +1268,8 @@ MonoBehaviour:
   pos3A: {fileID: 299980901}
   pos3B: {fileID: 200646308}
   pos3C: {fileID: 1623122165}
-  timeToMakeBox: 1
+  timing: {fileID: 1010531484}
+  timeToMakeBox: 2
   speed: 1
 --- !u!4 &1777561877
 Transform:
@@ -1436,6 +1437,54 @@ PrefabInstance:
       propertyPath: otherTexts.Array.data[2]
       value: 
       objectReference: {fileID: 1767191653}
+    - target: {fileID: 2946317255648755853, guid: 8d64b15c0d175fd4e8f3a6df5e839e01, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.1104765
+      objectReference: {fileID: 0}
+    - target: {fileID: 2946317255648755853, guid: 8d64b15c0d175fd4e8f3a6df5e839e01, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.107735
+      objectReference: {fileID: 0}
+    - target: {fileID: 2946317255648755853, guid: 8d64b15c0d175fd4e8f3a6df5e839e01, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.092991
+      objectReference: {fileID: 0}
+    - target: {fileID: 2946317255648755853, guid: 8d64b15c0d175fd4e8f3a6df5e839e01, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.012
+      objectReference: {fileID: 0}
+    - target: {fileID: 2946317255648755853, guid: 8d64b15c0d175fd4e8f3a6df5e839e01, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.588
+      objectReference: {fileID: 0}
+    - target: {fileID: 2946317255648755853, guid: 8d64b15c0d175fd4e8f3a6df5e839e01, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7791905972287809773, guid: 8d64b15c0d175fd4e8f3a6df5e839e01, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.1104765
+      objectReference: {fileID: 0}
+    - target: {fileID: 7791905972287809773, guid: 8d64b15c0d175fd4e8f3a6df5e839e01, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.107735
+      objectReference: {fileID: 0}
+    - target: {fileID: 7791905972287809773, guid: 8d64b15c0d175fd4e8f3a6df5e839e01, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.092991
+      objectReference: {fileID: 0}
+    - target: {fileID: 7791905972287809773, guid: 8d64b15c0d175fd4e8f3a6df5e839e01, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.011999995
+      objectReference: {fileID: 0}
+    - target: {fileID: 7791905972287809773, guid: 8d64b15c0d175fd4e8f3a6df5e839e01, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.588
+      objectReference: {fileID: 0}
+    - target: {fileID: 7791905972287809773, guid: 8d64b15c0d175fd4e8f3a6df5e839e01, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7885727701014425779, guid: 8d64b15c0d175fd4e8f3a6df5e839e01, type: 3}
       propertyPath: m_Name
       value: VRRig

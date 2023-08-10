@@ -16,6 +16,8 @@ public class BoxManager : MonoBehaviour
     public Transform pos3A, pos3B, pos3C;
     private Transform[][] spawnPositions;
 
+    public RhythmTiming1 timing;
+
 
     public float timeToMakeBox;
     public float speed;
@@ -30,15 +32,14 @@ public class BoxManager : MonoBehaviour
         new Transform[] { pos2A, pos2B, pos2C },
         new Transform[] { pos3A, pos3B, pos3C }
         };
-        Debug.Log("spawnPositions[0][2]: " + spawnPositions[0][2].name);
+        //Debug.Log("spawnPositions[0][2]: " + spawnPositions[0][2].name);
     }
 
-    // Update is called once per frame
     void Update()
     {
 
         timer += Time.deltaTime;
-        if (timer > timeToMakeBox)
+        if (timer > timeToMakeBox && timing.isOnBeat)
         {
             int randWall = Random.Range(0, 10);
             int randColor = Random.Range(0, 3);
@@ -85,10 +86,6 @@ public class BoxManager : MonoBehaviour
                 {
                     CreateBox(bluePrefab, spawnPositions[1][2]);
                 }
-                else
-                {
-
-                }
             }
 
             else if (randWall == 8)
@@ -102,10 +99,6 @@ public class BoxManager : MonoBehaviour
                 else if (randColor == 1)
                 {
                     CreateBox(bluePrefab, spawnPositions[2][1]);
-                }
-                else
-                {
-
                 }
             }
 

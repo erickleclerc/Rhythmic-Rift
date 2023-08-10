@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem.XR;
 using UnityEngine.InputSystem;
@@ -10,18 +9,13 @@ public class BoxBehaviour : MonoBehaviour
     public RhythmTiming1 rhythmTiming1;
     private bool isOnBeat = false;
 
-    // Start is called before the first frame update
     void Start()
     {
-        //score = GameObject.Find("Score").GetComponent<Score>();
         score = GameObject.FindGameObjectWithTag("Score").GetComponent<Score>();
 
-        //get the rhythmTiming component and see if the bool isOnBeat is true
         rhythmTiming1 = GameObject.Find("RhythmLogic").GetComponent<RhythmTiming1>();
-
     }
 
-    // Update is called once per frame
     void Update()
     {
         StartCoroutine(DestroyBox());
@@ -41,20 +35,6 @@ public class BoxBehaviour : MonoBehaviour
             Vibrate(InputSystem.GetDevice<XRController>(CommonUsages.LeftHand));
         }
     }
-
-    //private void OnCollisionEnter(Collision collision)
-    //{
-    //    if (collision.gameObject.tag == "RightHand")
-    //    {
-    //        AddToScoreIfOnBeat();
-    //        Vibrate(InputSystem.GetDevice<XRController>(CommonUsages.RightHand));
-    //    }
-    //    if (collision.gameObject.tag == "LeftHand")
-    //    {
-    //        AddToScoreIfOnBeat();
-    //        Vibrate(InputSystem.GetDevice<XRController>(CommonUsages.LeftHand));
-    //    }
-    //}
 
     private void AddToScoreIfOnBeat()
     {

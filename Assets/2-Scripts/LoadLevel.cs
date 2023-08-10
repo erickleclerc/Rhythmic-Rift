@@ -36,7 +36,7 @@ public class LoadLevel : MonoBehaviour
 
     IEnumerator LoadTrack()
     {
-        yield return new WaitForSecondsRealtime(3);
+        yield return new WaitForSecondsRealtime(1);
         SceneManager.LoadScene($"{levelname}");
     }
 }

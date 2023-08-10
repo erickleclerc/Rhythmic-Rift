@@ -45,6 +45,7 @@ public class RhythmTiming1 : MonoBehaviour
 
         // Convert from seconds to beat, rounding down (e.g., 45.67 seconds = beat 45 at 60 bpm).
         int beat = currentBeat;
+        //Debug.Log($"Current Beat: {currentBeat}");
 
         if (previousBeat != beat)
         {
